@@ -3,3 +3,36 @@ body {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    min-height: 100vh;
+}
+
+/***************************SIDEBAR****************/
+
+.sidebar {
+    background-color: green;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-rows: 1fr 3fr 3fr;
+}
+
+.sidebar > div:first-child {
+    background-color: pink;
+}
+
+.sidebar > div {
+    background-color: red;
+    border: 1px solid black;
+}
+
+/*********************MAIN**********************************/
+
+.main {
+    background-color: orangered;
+}
