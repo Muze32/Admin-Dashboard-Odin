@@ -13,22 +13,32 @@ body {
     min-height: 100vh;
 }
 
+:root {
+    --main-color: rgb(25 146 212);
+    --theme-color: white;
+    --font-color: white;
+}
+
+
+
 /***************************SIDEBAR****************/
 
 .sidebar {
-    background-color: green;
+    background-color: var(--main-color);
     display: grid;
     row-gap: 1rem;
     grid-template-rows: 1fr 3fr 3fr;
 }
 
-.sidebar > div:first-child {
-    background-color: pink;
+.sidebar > div {
+    color: var(--font-color);
+    font-size: 1.1rem;
+    border: 3px solid black;
 }
 
-.sidebar > div {
-    background-color: red;
-    border: 1px solid black;
+.nav > div {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
 }
 
 /*********************MAIN**********************************/
