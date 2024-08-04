@@ -57,8 +57,9 @@ body {
 .header {
     background-color: var(--theme-color);
     display: grid;
-    grid-template-columns: 5fr repeat(3, 1fr);
+    grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 2fr;
+    padding: 0 4rem;
 }
 
 .profile {
@@ -84,6 +85,18 @@ body {
 .header button:hover {
     background-color: rgb(38 155 218);
 }
+
+.buttons {
+    gap: 2rem;
+}
+
+
+.buttons, .profile {
+    display: flex; 
+    justify-content: end;
+    align-items: center;
+}
+
 
 /****SEARCH BAR*****/
 
