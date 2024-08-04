@@ -97,6 +97,22 @@ body {
     align-items: center;
 }
 
+/******PROFILE*******/
+
+.profile p {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/****GREETING*********/
+
+.greeting > span {
+    font-weight: 600;
+}
+
+.greeting > h2 {
+    margin-top: 1rem;
+}
 
 /****SEARCH BAR*****/
 
