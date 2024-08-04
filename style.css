@@ -20,8 +20,6 @@ body {
     --font-color: white;
 }
 
-
-
 /***************************SIDEBAR****************/
 
 .sidebar {
@@ -53,6 +51,19 @@ body {
     grid-template-rows: 1fr 2fr;
 }
 
+.profile {
+    border: 2px solid pink;
+    grid-column: 2 / -1;
+}
+
 .content {
     background-color: blue;
+}
+
+.header button {
+    background-color: var(--main-color);
+    color: var(--font-color);
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem 1.7rem;
 }
