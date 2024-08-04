@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "robotoregular";
 }
 
 .grid-container {
@@ -18,6 +19,15 @@ body {
     --main-color: rgb(25 146 212);
     --theme-color: white;
     --font-color: white;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /***************************SIDEBAR****************/
