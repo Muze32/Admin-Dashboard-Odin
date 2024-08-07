@@ -2,7 +2,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 body {
     margin: 0;
     padding: 0;
@@ -20,15 +27,6 @@ body {
     --main-color: rgb(25 146 212);
     --theme-color: white;
     --font-color: white;
-}
-
-@font-face {
-    font-family: 'robotoregular';
-    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
-         url('fonts/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 /***************************SIDEBAR****************/
@@ -131,7 +129,9 @@ body {
     height: 1.5rem;
 }
 
-.profile > img {
+.small-picture {
+    object-fit: cover;
+    width: 55px;
     height: 55px;
 }
 
@@ -208,21 +208,7 @@ input[type = "search"] {
     gap: 1.5rem;
 }
 
-.card {
-    border-left: 9px solid #f0b429;
-    background-color: var(--theme-color);
-    border-radius: 9px;
-    padding: 2.5rem 1rem 1rem;
-    box-shadow: 1px 1px 6px rgb(134, 132, 132);
-    position: relative;
-    height: 200px;
-}
 
-.card-title {
-    font-weight: 600;
-    font-size: 1.4rem;
-    margin-bottom: .5rem;
-}
 
 .footer {
     position: absolute;
@@ -233,6 +219,7 @@ input[type = "search"] {
 .footer > svg {
     padding-left: .8rem;
     height: 1.6rem;
+    cursor: pointer;
 }
 
 .section-title {
@@ -240,10 +227,46 @@ input[type = "search"] {
     font-weight: 600;
 }
 
+.card {
+    background-color: var(--theme-color);
+    border-radius: 9px;
+    padding: 2.5rem 1rem 1rem;
+    box-shadow: 1px 1px 6px rgb(134, 132, 132);
+}
+
+.project {
+    border-left: 9px solid #f0b429;
+    position: relative;
+    height: 210px;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+
 /***ANNOUNCEMENTS***/
 
 .announcements {
-    grid-column: 2 / -1;
+    grid-column: 2;
     grid-row: 1 / -1;
-    background-color: red;
+    display: grid;
+}
+
+.news > div > div {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.trending > div {
+    display: flex;
+}
+
+.trending img {
+    margin-right: 1rem;
+}
+
+hr {
+    border-top: 1px solid #ebe6e6;
 }
