@@ -196,11 +196,19 @@ input[type = "search"] {
     background-color: #e2e8f0;
     grid-template-columns: repeat(2, 1.5fr) 1fr;
     grid-template-rows: min-content repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem 1.5rem 3rem;
 }
 
-.announcement {
-    grid-column: 3;
+.projects {
+    grid-column: 1 / span 2;
 }
+
+.announcements {
+    grid-column: 3;
+    grid-row: 1 / -1;
+}
+
 .card {
     border-left: 9px solid #f0b429;
     background-color: var(--theme-color);
@@ -208,6 +216,12 @@ input[type = "search"] {
     padding: 2.5rem 1rem 1rem;
     box-shadow: 1px 1px 6px rgb(134, 132, 132);
     position: relative;
+    height: 220px;
+}
+
+.section {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .title {
@@ -226,4 +240,3 @@ input[type = "search"] {
     padding-left: .8rem;
     height: 1.6rem;
 }
-
