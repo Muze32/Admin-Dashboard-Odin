@@ -194,19 +194,18 @@ input[type = "search"] {
 .main {
     display: grid;
     background-color: #e2e8f0;
-    grid-template-columns: repeat(2, 1.5fr) 1fr;
-    grid-template-rows: min-content repeat(3, 1fr);
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: min-content 1fr;
     gap: 1.5rem;
     padding: 2rem 1.5rem 3rem;
 }
 
-.projects {
-    grid-column: 1 / span 2;
-}
+/****PROJECTS*******/
 
-.announcements {
-    grid-column: 3;
-    grid-row: 1 / -1;
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
 }
 
 .card {
@@ -216,15 +215,10 @@ input[type = "search"] {
     padding: 2.5rem 1rem 1rem;
     box-shadow: 1px 1px 6px rgb(134, 132, 132);
     position: relative;
-    height: 220px;
+    height: 200px;
 }
 
-.section {
-    font-size: 1.3rem;
-    font-weight: 600;
-}
-
-.title {
+.card-title {
     font-weight: 600;
     font-size: 1.4rem;
     margin-bottom: .5rem;
@@ -239,4 +233,17 @@ input[type = "search"] {
 .footer > svg {
     padding-left: .8rem;
     height: 1.6rem;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/***ANNOUNCEMENTS***/
+
+.announcements {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+    background-color: red;
 }
