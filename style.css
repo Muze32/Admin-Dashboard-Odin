@@ -131,22 +131,38 @@ body {
     font-size: 1.2rem;
 }
 
+.profile > svg {
+    height: 1.5rem;
+}
+
 .profile > img {
-    height: 70px;
+    height: 55px;
+}
+
+img {
     border-radius: 50px;
 }
 
-.profile > svg {
-    height: 2em;
-}
 /****GREETING*********/
 
-.greeting > span {
-    font-weight: 600;
+.greeting {
+    display: flex;
+    margin-top: 1.5rem;
 }
 
-.greeting > h2 {
+.greeting > div {
     margin-top: 1rem;
+    margin-left: 1.5rem;
+    font-weight: 900;
+}
+
+.profile-name {
+    margin-top: .4rem;
+    font-size: 1.6rem;
+}
+
+.greeting > img {
+    height: 90px;
 }
 
 /****SEARCH BAR*****/
