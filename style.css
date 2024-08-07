@@ -88,11 +88,6 @@ body {
     padding: 0 4rem;
 }
 
-.profile {
-    border: 2px solid pink;
-    grid-column: 2 / -1;
-}
-
 .content {
     background-color: blue;
 }
@@ -125,11 +120,25 @@ body {
 
 /******PROFILE*******/
 
+.profile {
+    display: flex;
+    gap: 1.5rem;
+    padding-top: .6rem;
+}
+
 .profile p {
     font-weight: 700;
     font-size: 1.2rem;
 }
 
+.profile > img {
+    height: 70px;
+    border-radius: 50px;
+}
+
+.profile > svg {
+    height: 2em;
+}
 /****GREETING*********/
 
 .greeting > span {
@@ -142,12 +151,11 @@ body {
 
 /****SEARCH BAR*****/
 
-.header input[type = "search"] {
+input[type = "search"] {
     background-color: rgb(213, 216, 221);
     border: none;
     border-radius: 1.6rem;
     flex-grow: 1;
-    height: 1.7rem;
 }
 
 .header input[type = "search"]:focus {
@@ -156,5 +164,14 @@ body {
 
 .search-container {
     display: flex;
-    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.search-container > svg, input[type = "search"] {
+    height: 1.7rem;
+}
+
+.search-container > svg {
+    margin-right: 1rem;
+    cursor: pointer;
 }
