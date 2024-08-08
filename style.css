@@ -26,7 +26,23 @@ body {
 :root {
     --main-color: rgb(25 146 212);
     --theme-color: white;
-    --font-color: white;
+    --font-color: black;
+    --main-bg-color: #e2e8f0;
+}
+
+/**********DARK COLOR********************/
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-color: #450a0a;
+        --theme-color: #181a1b;
+        --font-color: white;
+        --main-bg-color: #242729;
+        }
+  }
+  
+.header, .main {
+    color: var(--font-color);
 }
 
 /***************************SIDEBAR****************/
@@ -40,7 +56,7 @@ body {
 }
 
 .sidebar > div {
-    color: var(--font-color);
+    color: white;
     font-size: 1.1rem;
 }
 
@@ -90,7 +106,7 @@ body {
 
 .header button {
     background-color: var(--main-color);
-    color: var(--font-color);
+    color: white;
     border: none;
     border-radius: 1.2rem;
     padding: .6rem 1.7rem;
@@ -193,7 +209,7 @@ input[type = "search"] {
 
 .main {
     display: grid;
-    background-color: #e2e8f0;
+    background-color: var(--main-bg-color);
     grid-template-columns: 3fr 1fr;
     grid-template-rows: min-content 1fr;
     gap: 1.5rem;
@@ -283,4 +299,14 @@ hr {
 
 .trending img {
     margin-right: 1rem;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card svg, .header svg {
+    fill: var(--font-color);
 }
