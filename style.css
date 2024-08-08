@@ -208,8 +208,6 @@ input[type = "search"] {
     gap: 1.5rem;
 }
 
-
-
 .footer {
     position: absolute;
     bottom: 1rem;
@@ -253,24 +251,30 @@ input[type = "search"] {
     grid-row: 1 / -1;
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
-.news {
-    margin-bottom: 1.5rem;
-}
-
-.trending, .news {
-    margin-top: 1.5rem;
+.announcements .card {
     padding-top: 1rem;
+    flex: 1rem;
+    overflow: auto;
 }
+
+hr {
+    border-top: 1px solid #bbb;
+    margin: 1rem 0;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: .3rem;
+}
+
+/***TRENDING*****/
 
 .trending > div:not(:first-child) {
     margin-top: 1rem;
-}
-
-.news > div > div {
-    font-weight: bold;
-    font-size: 1.1rem;
 }
 
 .trending > div {
@@ -279,9 +283,4 @@ input[type = "search"] {
 
 .trending img {
     margin-right: 1rem;
-}
-
-hr {
-    border-top: 2px solid #bbb;
-    margin: 1rem 0;
 }
